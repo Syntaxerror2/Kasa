@@ -4,7 +4,9 @@ import '../styles/Footer.scss'
 export default function Footer() {
  return (
 <footer className="footer">
-<img src={logo} alt="Kasa logo" className="footer__logo" />
+<div  className="footer__logo" >
+    <img src={logo} alt="Kasa logo"></img>
+</div>
 <h3 className="footer__credits">© 2020 Kasa. All rights reserved</h3>
 
  </footer>
