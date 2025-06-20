@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Home from './pages/Home'
 import Footer from './components/Footer'
 import NotFound from './components/notFound'
+import About from './components/About'
 import './styles/App.scss'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 
       <Routes>
        <Route path="/" element={<Home/>} />
+       <Route path="/about" element={<About />} />
        <Route path="*" element={<NotFound />} />
       </Routes>
 
