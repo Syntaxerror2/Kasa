@@ -8,12 +8,14 @@
     width: 1240px;
     height: 68px;
 
-}
-
-.header__nav {
+    &__nav {
     display: flex;
     gap: 30px;
 }
+
+}
+
+
 
 a {
     text-decoration: none;

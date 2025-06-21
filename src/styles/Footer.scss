@@ -2,9 +2,6 @@
 
 .footer {
   background: #000000;
-  
- 
-  
   text-align: center;
   margin-top: 20px;
   width: 100vw;
@@ -14,10 +11,8 @@
   margin-left: -50vw;
   margin-right: -50vw;
   padding: 30px;
-}
 
-
-.footer__logo {
+  &__logo {
 width: 122px;
 height: 39.444419860839844px;
 top: 66px;
@@ -26,9 +21,7 @@ display: inline-block;
 margin-top: 40px;
 
 }
-
-
-.footer__credits {
+&__credits {
  color: white;
  text-align: center;
  font-family: Montserrat;
@@ -39,3 +32,11 @@ letter-spacing: 0%;
 text-align: center;
 margin-top: 40px;
 }
+
+
+
+}
+
+
+
+

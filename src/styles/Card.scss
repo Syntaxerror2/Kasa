@@ -13,19 +13,17 @@
   flex: 0 1 calc(33.333% - 20px); 
   max-width: calc(33.333% - 20px);
 
- 
-}
+  &__overlay {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  }
 
-.card__overlay {
-  width: 100%;
-  padding: 1rem;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-}
-
-.card__title {
-  color: white;
-  font-size: 18px;
-  margin: 0;
-  font-family: Montserrat;
-  text-align: left;
+  &__title {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    font-family: Montserrat;
+    text-align: left;
+  }
 }

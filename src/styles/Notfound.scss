@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.notfound__picture {
+width: 600px;
+height: 220px;
+
+margin: 0 auto;
+margin-top: 80px;
+
+&__text {
+margin-top: 70px;
+font-family: Montserrat;
+font-weight: 500;
+font-size: 36px;
+line-height: 143%;
+letter-spacing: 0%;
+vertical-align: bottom;
+color: #FF6060;
+margin-bottom: 70px;
+
+
+}
+
+&__backlink--wrapper {
+    text-decoration: underline;
+    font-family: Montserrat;
+
+    margin-bottom: 100px;
+
+
+    
+}
+
+&__backlink:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+}
+
