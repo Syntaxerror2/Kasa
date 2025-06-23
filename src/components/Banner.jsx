@@ -1,13 +1,12 @@
-import bannerImg from '../assets/IMG.svg'
 import '../styles/Banner.scss'
 
 
-export default function Banner() {
+export default function Banner({bannerImg, bannerText, alt}) {
    return (
     <div className="main__banner">
-          <img src={bannerImg} alt="image d'une côte océanique" />
+          <img src={bannerImg} alt={alt} />
           <div className="main__banner--overlay" />
-        <h1 className="main__banner--text">Chez vous, partout et ailleurs</h1>
+        <h1 className="main__banner--text">{bannerText}</h1>
         </div>
 
 

@@ -1,7 +1,11 @@
 import Accordion from "./Accordion";
 import Banner from "./Banner"
+import "../styles/About.scss"
+import aboutImg from "../assets/kalen-emsley-Bkci_8qcdvQ-unsplash-2.webp"
+
 
 export default function About() {
+  const altAbout = "Chaîne de montagnes"
   const valeurs = [
     {
       title: "Fiabilité",
@@ -22,12 +26,18 @@ export default function About() {
     }
   ];
 
+
+
   return (
     <main className="about">
-      <Banner />
+      <Banner bannerImg={aboutImg} alt={altAbout} bannerText={""} />
+ 
       {valeurs.map((valeur, index) => (
-        <Accordion key={index} title={valeur.title} content={valeur.content} />
+        
+      <Accordion key={index} title={valeur.title} content={valeur.content} />
+       
       ))}
+     
     </main>
   );
 }

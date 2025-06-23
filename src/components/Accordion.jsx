@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import '../styles/Accordion.scss'
+import downArrow from '../assets/Vector_down.svg'
 
 
 export default function Accordion({title, content}) { 
@@ -8,12 +10,12 @@ return (
 <div className="accordion">
 <div className="accordion__header" onClick={openAndClose}>
 
-<h2>{title}</h2>
-<span>{isOpen ? "˅" : "˄"}</span>
+<h2 className="accordion__title">{title}</h2>
+<span className="accordion__span"><img src={downArrow} className={isOpen ? 'rotate': 'rotate__up'} /></span>
 </div>
-{isOpen && <div className="accordion__content">
-  <p>{content}</p>
-</div>}
+<div className={`accordion__container ${isOpen ? 'open' : 'close'}`}>
+  <p className="accordion__content">{content}</p>
+</div>
 
 </div>
 
