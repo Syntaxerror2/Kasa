@@ -22,8 +22,9 @@ export default function Home() {
           key={property.id}
           title={property.title}
           cover={property.cover}
-          
+        
           /> 
+        
           )}
 
 
