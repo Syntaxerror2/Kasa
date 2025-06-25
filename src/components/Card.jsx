@@ -6,9 +6,9 @@ export default function Card({title, cover, description}) {
     
         <div className="card" style={{ backgroundImage: `url(${cover})` }}
       aria-label={description}>
-        <div className="card__overlay">
+        <a className="card__overlay">
         <h2 className="card__title" alt={title}>{title}</h2>
-        </div>
+        </a>
         
         </div>
     
