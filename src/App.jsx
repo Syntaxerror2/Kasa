@@ -5,19 +5,18 @@ import Footer from './components/Footer'
 import NotFound from './pages/NotFound'
 import About from '../src/pages/About'
 import './styles/App.scss'
+import Appartments from './pages/Appartments';
 
 function App() {
   return (
     <div>
       <Header />
-      
-
-
+  
       <Routes>
        <Route path="/" element={<Home/>} />
        <Route path="/about" element={<About />} />
        <Route path="*" element={<NotFound />} />
-   
+       <Route path="/appartements" elements={<Appartments/>} />
       </Routes>
 
       <Footer />

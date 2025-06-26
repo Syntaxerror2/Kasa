@@ -1,16 +1,17 @@
 import '../styles/Card.scss'
+import {Link} from 'react-router-dom'
 
 
 export default function Card({title, cover, description}) {
     return (
     
-        <div className="card" style={{ backgroundImage: `url(${cover})` }}
+        <Link className="card" to="/appartements" style={{ backgroundImage: `url(${cover})` }}
       aria-label={description}>
-        <a className="card__overlay">
-        <h2 className="card__title" alt={title}>{title}</h2>
-        </a>
+        <div className="card__overlay">
+        <h2 className="card__title">{title}</h2>
+      </div>
         
-        </div>
+        </Link>
     
     )
 }

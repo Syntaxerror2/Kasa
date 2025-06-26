@@ -18,13 +18,14 @@ export default function Home() {
         <div className="main__container">
           {properties.map((property) => 
           
+        
           <Card 
           key={property.id}
           title={property.title}
           cover={property.cover}
         
           /> 
-        
+    
           )}
 
 
