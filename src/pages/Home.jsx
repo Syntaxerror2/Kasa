@@ -21,6 +21,7 @@ export default function Home() {
         
           <Card 
           key={property.id}
+          id={property.id}
           title={property.title}
           cover={property.cover}
         
