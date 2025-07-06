@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+.collapse {
+margin: 0 auto;
+width: 1023px;
+border-radius: 5px;
+transition: max-height 0.7s ease, padding 0.7s ease;
+
+&__header {
+margin-top: 35px;
+width: 100%;
+height: 50px;
+border-radius: 5px;
+display: flex;
+justify-content: space-between;
+background-color: #FF6060;
+
+align-items: center;  
+
+
+
+}
+
+&__title {
+
+color: #f0f0f0;
+font-family: Montserrat;
+font-weight: 600;
+font-size: 24px;
+line-height: 143%;
+letter-spacing: 0%;
+vertical-align: middle;
+margin-left: 15px;
+
+}
+
+&__span {
+    margin-right: 12px;
+    color : white;
+}
+
+&__container {
+
+  background-color: #f7f7f7;
+  transition: max-height 0.7s ease, padding 0.7s ease;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  max-height: 0;
+  overflow: hidden;
+}
+
+&__content {
+ font-family: Montserrat;
+  font-size: 24px;
+  line-height:1.5;
+  text-align: justify;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-left: 15px;
+  padding-right: 15px;
+  list-style-type : none;
+}
+
+}
+
+.collapse__container.open {
+  max-height: 500px; 
+ // transition: max-height 0.7s ease, padding 0.7s ease;
+
+  
+}
+
+.collapse__container.close {
+  background-color: #f7f7f7;
+}
+
+.rotate {
+	transform: rotate(180deg);
+  transition: transform 0.7s ease;
+}
+
+.rotate__up {
+  transition: transform 0.7s ease;
+  transform: rotate(0deg);
+}
+
