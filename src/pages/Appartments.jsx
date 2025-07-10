@@ -3,26 +3,33 @@ import Slideshow from '../components/Slideshow'
 import properties from '../data/properties.json'
 import '../styles/Appartements.scss'
 import { useParams, Navigate } from 'react-router-dom'
+import {useState} from 'react'
 
 
 export default function Appartments() {
 const {id} = useParams()
-console.log(id)
+const [index, setIndex] = useState(0)
 const property = properties.find((item) => item.id === id)
 if(!property) {
  return <Navigate to='../pages/NotFound.jsx'/>
 }
-    return (
+const pictures = [property.cover, ...property.pictures] // Je crée un tableau réunissant la cover et les pictures
+const changeIndex = () => setIndex((index) => (index +1) % pictures.length)
+return (
     
   <main className="appartements">
  <Slideshow 
  key={property.id} 
+ change ={changeIndex}
  id={property.id} 
- cover={property.cover} 
+ cover={pictures[index]} 
  description={property.description}
  title={property.title}
+ location={property.location}
+ tags={property.tags}
+ index={index}
  /> 
-  <div class="appartements__collapse-container">
+  <div className="appartements__collapse-container">
  <Collapse 
  id={property.id} 
  title="Description" 
@@ -39,7 +46,7 @@ if(!property) {
  content={    
     <ul>
     {property.equipments.map((item, index) =>  
-        <li style={{listStyleType: 'none', width: '30%'}} key={index}>{item}</li>  )}
+        <li style={{listStyleType: 'none', width: '30%', whiteSpace: 'nowrap'}} key={index}>{item}</li>  )}
     </ul>
      }
    

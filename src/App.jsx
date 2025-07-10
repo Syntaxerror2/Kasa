@@ -9,19 +9,20 @@ import Appartments from './pages/Appartments';
 
 function App() {
   return (
-    <div>
+    <div className="page__container">
       <Header />
   
-      <Routes>
+      <Routes className="main">
        <Route path="/" element={<Home/>} />
        <Route path="/about" element={<About />} />
        <Route path="*" element={<NotFound />} />
        <Route path="/appartements/:id" element={<Appartments/>} />
       </Routes>
-
-      <Footer />
+      
+    <Footer className="footer" />
     
     </div>
+    
   );
 }
 

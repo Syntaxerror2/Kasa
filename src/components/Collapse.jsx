@@ -3,7 +3,7 @@ import '../styles/Collapse.scss'
 import downArrow from '../assets/Vector_down.svg'
 
 
-export default function Accordion({title, content}) { 
+export default function Collapse({title, content}) { 
 const [isOpen, set] = useState(false)
 const openAndClose = () => {set(!isOpen)}
 return (

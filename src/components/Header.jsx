@@ -9,8 +9,8 @@ export default function Header() {
         <img alt="logo de Kasa, site de vente immobilière" src={logo}></img>
         </div>
         <nav className="header__nav">
-        <Link to="/">Accueil</Link>
-        <Link to="/about">A propos</Link>
+        <Link to="/" className="active">Accueil</Link>
+        <Link to="/about" className="active">A Propos</Link>
         </nav>
         
         </header>

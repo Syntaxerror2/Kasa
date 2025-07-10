@@ -5,14 +5,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1240px;
+    width: 1270px;
     height: 68px;
 
     &__nav {
     display: flex;
-    gap: 30px;
+    gap: 60px;
 }
 
+}
+
+.header__nav {
+    vertical-align: bottom;
 }
 
 
@@ -27,10 +31,12 @@ a {
     text-align: right;
     vertical-align: bottom;
     color: inherit;
-
+    margin-top: 30px;
 
 }
 
-a:hover {
+
+
+a.active{
     text-decoration: underline;
 }
