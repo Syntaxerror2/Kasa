@@ -1,0 +1,48 @@
+
+
+.tag  {
+  background-color:  #ff6060;;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10px;
+
+  white-space: nowrap;
+  width: 12%;
+  text-align: center;
+
+  &__title {
+    color: #FF6060;
+    font-family: Montserrat;
+    text-align: left;
+    margin-top: 30px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+&__wrapper {
+    text-align: left;
+    font-family: Montserrat;
+    margin-top: 20px;
+    border-radius: 25px;
+    display: flex;
+    color: white;
+    margin-top: 20px;
+}
+
+
+&__location {
+    text-align: left;
+    font-family: Montserrat;
+    margin-top: 20px;
+    color: black;
+    font-weight: 450;
+}
+
+
+
+}
+
+

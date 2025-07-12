@@ -4,7 +4,7 @@ import VectorRight from '../assets/Vector_right.svg'
 
 
 
-export default function Slideshow( {id, title, cover, description, location, tags, change}) {
+export default function Slideshow( {id, title, cover, description, change}) {
    return (
    <div key={id}>
     <div className="slideshow__container">
@@ -27,15 +27,7 @@ export default function Slideshow( {id, title, cover, description, location, tag
      <img alt="flèche allant vers la droite"  src={VectorRight}/>
      </span>  
         </div> 
-    <div>
-        <h2 className="slideshow__title">{title}</h2>
-        <h3 className="slideshow__location">{location}</h3>
-        <div className="slideshow__tag">
-        {tags.map((tag, index) =>
-        <span className="tag" key={index}>{tag}</span>
-        )}
-        </div>
-    </div>
+  
 
 
     </div>

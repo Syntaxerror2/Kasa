@@ -1,5 +1,6 @@
 import Collapse from '../components/Collapse'
 import Slideshow from '../components/Slideshow'
+import Tags from '../components/Tags'
 import properties from '../data/properties.json'
 import '../styles/Appartements.scss'
 import { useParams, Navigate } from 'react-router-dom'
@@ -25,10 +26,18 @@ export default function Appartments() {
                 cover={pictures[index]}
                 description={property.description}
                 title={property.title}
-                location={property.location}
-                tags={property.tags}
                 index={index}
             />
+                
+            <Tags 
+            id={property.id}
+            key= {property.id}
+            location={property.location}
+            tags={property.tags}
+            title={property.title}
+         
+            />
+            
             <div className="appartements__collapse-container">
                 <Collapse
                     id={property.id}
