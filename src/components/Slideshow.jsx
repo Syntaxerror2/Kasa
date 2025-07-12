@@ -4,12 +4,12 @@ import VectorRight from '../assets/Vector_right.svg'
 
 
 
-export default function Slideshow( {id, title, cover, description, change}) {
+export default function Slideshow( {id, title, cover, description, last, next}) {
    return (
    <div key={id}>
     <div className="slideshow__container">
   <span className="slideshow__vector slideshow__vector--left">
-     <img alt="flèche allant vers la gauche" src={VectorLeft} />
+     <img alt="flèche allant vers la gauche" onClick={last} src={VectorLeft} />
   </span>
       <span className="slideshow">
         <img 
@@ -22,7 +22,7 @@ export default function Slideshow( {id, title, cover, description, change}) {
        </span>
      <span 
      className="slideshow__vector slideshow__vector--right"
-     onClick={change} 
+     onClick={next} 
      >
      <img alt="flèche allant vers la droite"  src={VectorRight}/>
      </span>  
