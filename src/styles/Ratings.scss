@@ -15,5 +15,9 @@ width: 26px;
 height: 26px;
 }
 
+&__star.active {
+color: $primary-color;
+}
+
 }
 

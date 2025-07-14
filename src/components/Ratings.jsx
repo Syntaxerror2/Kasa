@@ -1,16 +1,22 @@
-import '../styles/Ratings.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar } from '@fortawesome/free-solid-svg-icons'
+import '../styles/Ratings.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar } from '@fortawesome/free-solid-svg-icons';
 
-export default function Ratings() {
-  return <div className="ratings">
+export default function Ratings({ id, rating }) {
+  const ratings = Number(rating);
+  const totalStars = 5;
 
- <span className='ratings__wrapper'>
-<FontAwesomeIcon icon={faStar} className='ratings__star' />
-<FontAwesomeIcon icon={faStar} className='ratings__star' />
-<FontAwesomeIcon icon={faStar} className='ratings__star' />
-<FontAwesomeIcon icon={faStar} className='ratings__star' />
-<FontAwesomeIcon icon={faStar} className='ratings__star' />
-</span>
-  </div>;
+  return (
+    <div key={id} className="ratings">
+      <span className="ratings__wrapper">
+        {Array.from({ length: totalStars }).map((_, index) => (
+          <FontAwesomeIcon
+            key={index}
+            icon={faStar}
+            className={`ratings__star ${index < ratings ? 'active' : 'inactive'}`}
+          />
+        ))}
+      </span>
+    </div>
+  );
 }
