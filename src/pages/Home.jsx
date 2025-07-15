@@ -1,6 +1,6 @@
 import "../styles/Home.scss";
 import properties from "../data/properties.json";
-import coastImg from "../assets/coast_img.webp";
+import coastImg from "../assets/coast_img_1_11zon.webp";
 import Card from "../components/Card";
 import Banner from "../components/Banner";
 

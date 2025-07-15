@@ -1,7 +1,7 @@
 import Collapse from "../components/Collapse";
 import Banner from "../components/Banner";
 import "../styles/About.scss";
-import aboutImg from "../assets/kalen-emsley-Bkci_8qcdvQ-unsplash-2.webp";
+import aboutImg from "../assets/kalen-emsley-Bkci_8qcdvQ-unsplash-2_2_11zon.webp";
 
 export default function About() {
   const altAbout = "Chaîne de montagnes";

@@ -74,6 +74,10 @@
     font-size: 26px;
    }
 
+   .appartements__host--container {
+    margin-top: 30px;
+   }
+
    .appartements__section  {
     display: block;
   
@@ -91,7 +95,7 @@
     align-items: flex-start;
   }
   .appartements__property--wrapper {
-   width: 90%;
+   width: 85%;
    margin: auto;
    display: inline-flex;
    justify-content: space-between;

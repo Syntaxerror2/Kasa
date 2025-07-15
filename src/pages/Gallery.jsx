@@ -10,14 +10,8 @@ import { useMemo, useState } from "react";
 export default function Appartments() {
   const { id } = useParams();
   const property = properties.find((item) => item.id === id);
-
-  if (!property) {
-    return <Navigate to="*" />;
-  }
-  const [index, setIndex] = useState(0);
-  const collapseContent = property.description;
-  const cleanText = collapseContent.replace(/\s+/g, " ").trim();
-  const pictures = useMemo(() => {
+   const [index, setIndex] = useState(0);
+    const pictures = useMemo(() => {
   //useMemo "mémorise" le résultat (l'index du tableau)
   //ainsi, il n'exécute la fonction que si la valeur de property change
   //cela évite d'avoir deux fois de suite mon image cover
@@ -26,6 +20,13 @@ export default function Appartments() {
     }
     return [property.cover, ...property.pictures];
   }, [property]);
+  if (!property) {
+    return <Navigate to="*" />;
+  }
+ 
+  const collapseContent = property.description;
+  const cleanText = collapseContent.replace(/\s+/g, " ").trim();
+ 
   // Je crée un tableau réunissant la cover et les pictures. UseMemo évite la duplication de la cover
   // lors d'une itération complète à travers le tableau
 
