@@ -8,9 +8,8 @@
   font-size: 14px;
   font-weight: 500;
   margin-right: 10px;
-
   white-space: nowrap;
-  width: 12%;
+  width: 13%;
   text-align: center;
 
   &__section {
@@ -30,4 +29,10 @@
   
   }
 
+}
+
+@media (max-width: 768px) {
+  .tag {
+    width: 35%;
+  }
 }

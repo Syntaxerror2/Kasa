@@ -19,6 +19,7 @@
     margin-top: 10px;
     color: black;
     font-weight: 450;
+    font-size: 22px;
   }
 
   &__title--wrapper {
@@ -39,7 +40,7 @@
 
   &__host--name {
     font-family: $primary-font;
-    margin-top: 15px;
+    margin-top: 8px;
     flex-wrap: wrap;
     color: $primary-color;
     max-width: 50%;
@@ -58,4 +59,20 @@
     justify-content: space-between;
   }
 
+}
+
+@media (max-width: 768px) {
+  .appartements__title--wrapper {
+    width: 90%;
+    margin: auto;
+    margin-top: -186px;
+  }
+  .appartements__property--wrapper {
+   width: 90%;
+   margin: auto;
+ 
+  }
+  .appartements__collapse-container {
+    flex-direction: column;
+  }
 }

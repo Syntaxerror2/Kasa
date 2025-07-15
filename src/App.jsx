@@ -11,16 +11,16 @@ function App() {
   return (
     <div className="page__container">
       <Header />
-
       <Routes className="main">
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/appartements/:id" element={<Gallery />} />
       </Routes>
-
-      <Footer className="footer" />
+    <Footer className="footer" />
+     
     </div>
+   
   );
 }
 

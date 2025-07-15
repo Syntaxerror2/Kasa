@@ -16,6 +16,7 @@ export default function Slideshow({
         <span className="slideshow__vector slideshow__vector--left">
           <img
             alt="flèche allant vers la gauche"
+            className="slideshow__vector--img"
             onClick={last}
             src={VectorLeft}
           />
@@ -32,7 +33,7 @@ export default function Slideshow({
           className="slideshow__vector slideshow__vector--right"
           onClick={next}
         >
-          <img alt="flèche allant vers la droite" src={VectorRight} />
+          <img className="slideshow__vector--img" alt="flèche allant vers la droite" src={VectorRight} />
         </span>
       </div>
     </div>

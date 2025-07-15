@@ -2,18 +2,25 @@ import Collapse from "../components/Collapse";
 import Slideshow from "../components/Slideshow";
 import Tags from "../components/Tags";
 import properties from "../data/properties.json";
-import Ratings from "../components/Ratings"
+import Ratings from "../components/Ratings";
 import "../styles/Gallery.scss";
 import { useParams, Navigate } from "react-router-dom";
 import { useMemo, useState } from "react";
 
 export default function Appartments() {
-  const { id } = useParams()
-  const [index, setIndex] = useState(0);
+  const { id } = useParams();
   const property = properties.find((item) => item.id === id);
-  const collapseContent = property.description
-  const cleanText = collapseContent.replace(/\s+/g, ' ').trim();
+
+  if (!property) {
+    return <Navigate to="*" />;
+  }
+  const [index, setIndex] = useState(0);
+  const collapseContent = property.description;
+  const cleanText = collapseContent.replace(/\s+/g, " ").trim();
   const pictures = useMemo(() => {
+  //useMemo "mémorise" le résultat (l'index du tableau)
+  //ainsi, il n'exécute la fonction que si la valeur de property change
+  //cela évite d'avoir deux fois de suite mon image cover
     if (property.pictures.includes(property.cover)) {
       return property.pictures;
     }
@@ -21,12 +28,10 @@ export default function Appartments() {
   }, [property]);
   // Je crée un tableau réunissant la cover et les pictures. UseMemo évite la duplication de la cover
   // lors d'une itération complète à travers le tableau
-  if (!property) {
-    return <Navigate to="../pages/NotFound.jsx" />;
-  }
 
   const prevIndex = () => setIndex((index) => (index + 1) % pictures.length);
-  const lastIndex = () => setIndex((index) => (index - 1 + pictures.length) % pictures.length);
+  const lastIndex = () =>
+    setIndex((index) => (index - 1 + pictures.length) % pictures.length);
   // En javascript, le modulo d'un nombre négatif reste négatif. Il est donc nécessaire
   // d'ajouter "+ pictures.length" pour décrémenter, en remontant toujours dans la boucle
   return (
@@ -42,37 +47,24 @@ export default function Appartments() {
         index={index}
       />
       <div className="appartements__title--wrapper">
-
- <div class>
-      <h1 className="appartements__title">{property.title}</h1>
-      <h2 className="appartements__location">{property.location}</h2>
-</div>
-<div className="appartements__host--container">
-      <p className="appartements__host--name">{property.host.name}</p>
-      <img className="appartements__host--photo" src={property.host.picture} />
-</div>
+        <div class>
+          <h1 className="appartements__title">{property.title}</h1>
+          <h2 className="appartements__location">{property.location}</h2>
+        </div>
+        <div className="appartements__host--container">
+          <p className="appartements__host--name">{property.host.name}</p>
+          <img
+            className="appartements__host--photo"
+            src={property.host.picture}
+          />
+        </div>
       </div>
-     <div className="appartements__property--wrapper">
-      <Tags
-        id={property.id}
-        key={property.id}
-        tags={property.tags}
-      
-      />
-      <Ratings
-      id={property.id}
-      rating={property.rating}
-
-      
-      />
+      <div className="appartements__property--wrapper">
+        <Tags id={property.id} key={property.id} tags={property.tags} />
+        <Ratings id={property.id} rating={property.rating} />
       </div>
       <div className="appartements__collapse-container">
-        <Collapse
-          id={property.id}
-          title="Description"
-          content={cleanText}
-         
-        />
+        <Collapse id={property.id} title="Description" content={cleanText} />
 
         <Collapse
           id={property.id}

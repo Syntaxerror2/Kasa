@@ -6,11 +6,14 @@ import Banner from "../components/Banner";
 
 export default function Home() {
   let altHome = "Photographie montrant une côte océanique";
-  let text = "Chez vous, partout et ailleurs";
+  let text = '<span class="mobile-break">Chez vous,</span> partout et ailleurs';
 
   return (
     <main className="main">
-      <Banner bannerImg={coastImg} alt={altHome} bannerText={text} />
+      <Banner 
+      bannerImg={coastImg} 
+      alt={altHome} 
+      bannerText={text} />
 
       <div className="main__container">
         {properties.map((property) => (

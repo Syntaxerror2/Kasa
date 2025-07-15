@@ -15,7 +15,7 @@ export default function Collapse({ title, content }) {
           <img src={downArrow} className={isOpen ? "rotate" : "rotate__up"} />
         </span>
       </div>
-      <div className={`collapse__container ${isOpen ? "open" : "close"}`}>
+      <div className={`collapse__container ${isOpen && "open"}`}>
         <p className="collapse__content">{content}</p>
       </div>
     </div>
