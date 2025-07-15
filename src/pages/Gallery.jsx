@@ -46,10 +46,18 @@ export default function Appartments() {
         title={property.title}
         index={index}
       />
+    <section className="appartements__section">
       <div className="appartements__title--wrapper">
         <div class>
           <h1 className="appartements__title">{property.title}</h1>
           <h2 className="appartements__location">{property.location}</h2>
+           <Tags id={property.id} key={property.id} tags={property.tags} />
+        </div>
+        
+      </div>
+      <div className="appartements__property--wrapper">
+         <div className="appartements__ratings">
+        <Ratings id={property.id} rating={property.rating} />
         </div>
         <div className="appartements__host--container">
           <p className="appartements__host--name">{property.host.name}</p>
@@ -58,12 +66,10 @@ export default function Appartments() {
             src={property.host.picture}
           />
         </div>
+       
       </div>
-      <div className="appartements__property--wrapper">
-        <Tags id={property.id} key={property.id} tags={property.tags} />
-        <Ratings id={property.id} rating={property.rating} />
-      </div>
-      <div className="appartements__collapse-container">
+      </section>
+      <section className="appartements__collapse-container">
         <Collapse id={property.id} title="Description" content={cleanText} />
 
         <Collapse
@@ -86,7 +92,7 @@ export default function Appartments() {
             </ul>
           }
         />
-      </div>
+      </section>
     </main>
   );
 }
