@@ -83,5 +83,13 @@
 @media (max-width: 768px) {
  .collapse {
   width: 90%;
+
+  &__title {
+    font-size: 18px;
+  }
+
+  &__header {
+    height: 40px;
+  }
  }
 }

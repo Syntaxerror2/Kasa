@@ -21,3 +21,17 @@ color: $primary-color;
 
 }
 
+@media (max-width: 768px) {
+    .ratings {
+            &__star {
+        height: 18px;
+        width: 26px;
+    }
+    &__wrapper {
+        margin-left: 4px;
+    }
+}
+
+    }
+
+

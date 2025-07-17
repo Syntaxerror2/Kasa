@@ -4,13 +4,13 @@
   background-color: $primary-color;
   color: white;
   padding: 5px 10px;
-  border-radius: 12px;
+  border-radius: 10px;
   font-size: 14px;
   font-weight: 500;
   margin-right: 10px;
   white-space: nowrap;
-  max-width: 100%;
   text-align: center;
+
 
   &__section {
     width: 100%;
@@ -26,13 +26,13 @@
     display: flex;
     color: white;
     margin-top: 20px;
-  
+    
   }
 
 }
 
 @media (max-width: 768px) {
-  .tag {
-    width: 40%;
-  }
+ .tag {
+  width: unset;
+ }
 }

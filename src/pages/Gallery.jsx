@@ -37,6 +37,7 @@ export default function Appartments() {
   // d'ajouter "+ pictures.length" pour décrémenter, en remontant toujours dans la boucle
   return (
     <main className="appartements">
+    <section className="appartements__slideshow">
       <Slideshow
         key={property.id}
         last={lastIndex}
@@ -47,6 +48,7 @@ export default function Appartments() {
         title={property.title}
         index={index}
       />
+      </section>
     <section className="appartements__section">
       <div className="appartements__title--wrapper">
         <div class>

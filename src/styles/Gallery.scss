@@ -3,6 +3,7 @@
 .appartements {
   font-family: $primary-font;
   list-style-type: none;
+  
    &__section {
     display: flex;
     justify-content: space-between;
@@ -70,41 +71,54 @@
 
 @media (max-width: 768px) {
 
-   .appartements__title {
-    font-size: 26px;
+  .appartements {
+     &__slideshow {
+    height: 270px;
+  }
+  &__title {
+    font-size: 24px;
    }
 
-   .appartements__host--container {
-    margin-top: 30px;
+   &__host--container {
+    margin-top: 15px;
+    justify-content: right;
    }
 
-   .appartements__section  {
+   &__host--name {
+    font-size: 16px;
+   }
+
+   &__section  {
     display: block;
   
   }
 
-  .appartements__location {
+  &__location {
     font-size: 18px;
   }
   
-  .appartements__title--wrapper {
+  &__title--wrapper {
     width: 90%;
     margin: auto;
-    margin-top: -196px;
     margin-bottom: 0;
     align-items: flex-start;
   }
-  .appartements__property--wrapper {
-   width: 85%;
+  &__property--wrapper {
+   width: 90%;
    margin: auto;
    display: inline-flex;
    justify-content: space-between;
    flex-direction: row;
-   margin-left: 10%;
-   margin-top: -15px;
  
   }
-  .appartements__collapse-container {
+  &__collapse-container {
     flex-direction: column;
   }
+  &__ratings {
+   margin-top: 30px;
+  }
+
+  }
+  
+  
 }
