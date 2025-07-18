@@ -16,7 +16,7 @@ export default function Collapse({ title, content }) {
         </span>
       </div>
       <div className={`collapse__container ${isOpen && "open"}`}>
-        <p className="collapse__content">{content}</p>
+        <div className="collapse__content">{content}</div>
       </div>
     </div>
   );

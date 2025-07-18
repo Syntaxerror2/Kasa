@@ -9,6 +9,7 @@ export default function Slideshow({
   description,
   last,
   next,
+  array
 }) {
   return (
     <div key={id}>
@@ -16,7 +17,8 @@ export default function Slideshow({
         <span className="slideshow__vector slideshow__vector--left">
           <img
             alt="flèche allant vers la gauche"
-            className="slideshow__vector--img"
+            className=
+            {array.length === 1 ? "hidden" : "slideshow__vector--img"}
             onClick={last}
             src={VectorLeft}
           />
@@ -27,6 +29,7 @@ export default function Slideshow({
             src={cover}
             alt={description}
             title={title}
+            array={array}
           />
         </span>
         <span
@@ -34,7 +37,7 @@ export default function Slideshow({
           onClick={next}
         >
           <img
-            className="slideshow__vector--img"
+            className= {array.length === 1 ? "hidden" : "slideshow__vector--img"}
             alt="flèche allant vers la droite"
             src={VectorRight}
           />
