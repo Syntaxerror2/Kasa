@@ -26,6 +26,7 @@
     display: flex;
     color: white;
     margin-top: 20px;
+    flex-wrap: wrap;
     
   }
 
@@ -34,5 +35,6 @@
 @media (max-width: 768px) {
  .tag {
   width: unset;
+  margin-bottom: 3px;
  }
 }

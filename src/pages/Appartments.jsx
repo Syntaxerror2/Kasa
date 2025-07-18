@@ -17,7 +17,7 @@ export default function Appartments() {
     }
     return [property.cover, ...property.pictures];
   }, [property]);
-  // Je crée un tableau réunissant la cover et les pictures. UseMemo évite la duplication de la cover
+  // Je crée un tableau réunissant la cover et les pictures. UseMemo est un hook évitant la duplication de la cover
   // lors d'une itération complète à travers le tableau
   if (!property) {
     return <Navigate to="../pages/NotFound.jsx" />;

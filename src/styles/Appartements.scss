@@ -4,7 +4,7 @@
   font-family: $primary-font;
   list-style-type: none;
 
-   &__title {
+  &__title {
     color: $primary-color;
     font-family: $primary-font;
     text-align: left;
@@ -13,7 +13,7 @@
     font-weight: 500;
   }
 
-    &__location {
+  &__location {
     text-align: left;
     font-family: $primary-font;
     margin-top: 10px;
@@ -55,5 +55,4 @@
     gap: 5%;
     justify-content: space-between;
   }
-
 }

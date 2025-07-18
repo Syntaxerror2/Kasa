@@ -2,14 +2,7 @@ import "../styles/Slideshow.scss";
 import VectorLeft from "../assets/Vector_left.svg";
 import VectorRight from "../assets/Vector_right.svg";
 
-export default function Slideshow({
-  id,
-  title,
-  cover,
-  description,
-  last,
-  next,
-}) {
+export default function Slideshow({id,title,cover,description,last,next,}) {
   return (
     <div key={id}>
       <div className="slideshow__container">

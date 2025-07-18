@@ -9,18 +9,19 @@ import Gallery from "./pages/Gallery";
 
 function App() {
   return (
-    <div className="page__container">
-      <Header />
-      <Routes className="main">
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<NotFound />} />
-        <Route path="/appartements/:id" element={<Gallery />} />
-      </Routes>
-    <Footer className="footer" />
+    <div className="app-container">
      
+      <main className="page__container">
+       <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
+          <Route path="/appartements/:id" element={<Gallery />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
-   
   );
 }
 

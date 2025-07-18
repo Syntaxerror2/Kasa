@@ -47,29 +47,24 @@ img {
   display: inline;
 }
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
   .main__banner {
-  width: 92%;
-  height: 140px;
-  margin: auto;
-  border-radius: 10px;
+    width: 92%;
+    height: 140px;
+    margin: auto;
+    border-radius: 10px;
 
-&--text {
-  text-align: left;
-  font-size: 26px;
-  width: 90%;
-  top: 60%;
-  flex-wrap: wrap-reverse;
-
-}
-
-
+    &--text {
+      text-align: left;
+      font-size: 26px;
+      width: 90%;
+      top: 53%;
+      flex-wrap: wrap-reverse;
+    }
   }
 
-   .mobile-break::after {
+  .mobile-break::after {
     content: "";
     display: block;
-
- }
-
- }
+  }
+}
