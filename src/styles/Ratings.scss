@@ -1,37 +1,33 @@
 @use "../styles/variables.scss" as *;
 
 .ratings {
-&__wrapper {
+  &__wrapper {
     display: flex;
     justify-content: end;
     gap: 6%;
     padding-bottom: 0;
     margin-top: 10px;
-}
+  }
 
-    &__star {
-color: #E3E3E3;
-width: 26px;
-height: 26px;
-}
+  &__star {
+    color: #e3e3e3;
+    width: 26px;
+    height: 26px;
+  }
 
-&__star.active {
-color: $primary-color;
-}
-
+  &__star.active {
+    color: $primary-color;
+  }
 }
 
 @media (max-width: 768px) {
-    .ratings {
-            &__star {
-        height: 18px;
-        width: 26px;
+  .ratings {
+    &__star {
+      height: 18px;
+      width: 26px;
     }
     &__wrapper {
-        margin-left: 4px;
+      margin-left: 4px;
     }
+  }
 }
-
-    }
-
-

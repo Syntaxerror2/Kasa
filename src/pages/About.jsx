@@ -31,7 +31,12 @@ export default function About() {
   return (
     <main className="about">
       <div className="about__banner">
-      <Banner className="bubu" bannerImg={aboutImg} alt={altAbout} bannerText={""} />
+        <Banner
+          className="bubu"
+          bannerImg={aboutImg}
+          alt={altAbout}
+          bannerText={""}
+        />
       </div>
       {valeurs.map((valeur, index) => (
         <Collapse key={index} title={valeur.title} content={valeur.content} />

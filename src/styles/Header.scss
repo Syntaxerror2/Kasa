@@ -8,8 +8,6 @@
   height: 68px;
   width: 100%;
 
-
-
   &__nav {
     display: flex;
     gap: 60px;
@@ -33,7 +31,7 @@ nav a {
 
 nav a.active {
   text-decoration: underline;
-  cursor:auto;
+  cursor: auto;
 }
 
 @media (max-width: 768px) {
@@ -43,7 +41,6 @@ nav a.active {
     width: 90%;
     margin-left: 5%;
     margin-right: 0;
-    
 
     &__nav {
       display: flex;
@@ -51,13 +48,13 @@ nav a.active {
       gap: 40px;
     }
 
-      &__kasa--logo {
+    &__kasa--logo {
       width: 80%;
     }
   }
 
   nav a {
-    font-size: 15px;
+    font-size: 14px;
     flex-wrap: nowrap;
     text-transform: uppercase;
     margin-top: 15px;

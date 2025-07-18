@@ -2,9 +2,9 @@
 
 .collapse {
   margin: 0 auto;
- width: 80%;
+  width: 80%;
   border-radius: 5px;
-  transition: max-height 0.7s ease,  padding 0.7s ease;
+  transition: max-height 0.7s ease, padding 0.7s ease;
 
   &__header {
     margin-top: 35px;
@@ -41,14 +41,11 @@
     border-bottom-right-radius: 10px;
     max-height: 0;
     overflow: hidden;
-    
   }
 
   &__container.open {
-    
     transition: max-height 0.7s ease;
     max-height: 500px;
-
   }
 
   &__container.close {
@@ -59,13 +56,12 @@
     font-family: $primary-font;
     font-size: 20px;
     line-height: 1.5;
-    text-align:left;
+    text-align: left;
     padding-top: 20px;
     padding-bottom: 35px;
     padding-left: 25px;
     padding-right: 15px;
     list-style-type: none;
-  
   }
 }
 
@@ -80,15 +76,15 @@
 }
 
 @media (max-width: 768px) {
- .collapse {
-  width: 90%;
+  .collapse {
+    width: 90%;
 
-  &__title {
-    font-size: 18px;
-  }
+    &__title {
+      font-size: 18px;
+    }
 
-  &__header {
-    height: 40px;
+    &__header {
+      height: 40px;
+    }
   }
- }
 }

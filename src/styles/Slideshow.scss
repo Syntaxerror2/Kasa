@@ -39,30 +39,28 @@
   .slideshow {
     margin-top: 0;
     height: 0px;
-  &__container {
-    height: 270px;
-  }
+    &__container {
+      height: 270px;
+    }
 
-  &__cover {
-    width: 90%;
-    margin: auto;
-    height: 270px;
-    border-radius: 10px;
-  }
-  &__vector {
-    margin-top: 0;
-  }
-  &__vector--left {
-    left: 10%;
-  }
+    &__cover {
+      width: 90%;
+      margin: auto;
+      height: 270px;
+      border-radius: 10px;
+    }
+    &__vector {
+      margin-top: 0;
+    }
+    &__vector--left {
+      left: 10%;
+    }
 
-  &__vector--right {
-    right: 10%;
+    &__vector--right {
+      right: 10%;
+    }
+    &__vector--img {
+      height: 50%;
+    }
   }
-  &__vector--img {
-    height: 50%;
-  
-  }
-  }
- 
 }

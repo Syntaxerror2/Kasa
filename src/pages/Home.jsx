@@ -10,10 +10,7 @@ export default function Home() {
 
   return (
     <main className="main">
-      <Banner 
-      bannerImg={coastImg} 
-      alt={altHome} 
-      bannerText={text} />
+      <Banner bannerImg={coastImg} alt={altHome} bannerText={text} />
 
       <div className="main__container">
         {properties.map((property) => (

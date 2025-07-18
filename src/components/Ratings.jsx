@@ -1,6 +1,6 @@
-import '../styles/Ratings.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import "../styles/Ratings.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 export default function Ratings({ id, rating }) {
   const ratings = Number(rating);
@@ -13,7 +13,9 @@ export default function Ratings({ id, rating }) {
           <FontAwesomeIcon
             key={index}
             icon={faStar}
-            className={`ratings__star ${index < ratings ? 'active' : 'inactive'}`}
+            className={`ratings__star ${
+              index < ratings ? "active" : "inactive"
+            }`}
           />
         ))}
       </span>

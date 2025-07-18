@@ -10,14 +10,13 @@ import Gallery from "./pages/Gallery";
 function App() {
   return (
     <div className="app-container">
-     
       <main className="page__container">
-       <Header />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="*" element={<NotFound />} />
           <Route path="/appartements/:id" element={<Gallery />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

@@ -3,12 +3,12 @@
 .appartements {
   font-family: $primary-font;
   list-style-type: none;
-  
-   &__section {
+
+  &__section {
     display: flex;
     justify-content: space-between;
-   }
-   &__title {
+  }
+  &__title {
     color: $primary-color;
     font-family: $primary-font;
     text-align: left;
@@ -21,7 +21,7 @@
     margin-top: 40px;
   }
 
-    &__location {
+  &__location {
     text-align: left;
     font-family: $primary-font;
     margin-top: 10px;
@@ -66,59 +66,52 @@
     gap: 5%;
     justify-content: space-between;
   }
-
 }
 
 @media (max-width: 768px) {
-
   .appartements {
-     &__slideshow {
-    height: 270px;
-  }
-  &__title {
-    font-size: 24px;
-   }
+    &__slideshow {
+      height: 270px;
+    }
+    &__title {
+      font-size: 24px;
+    }
 
-   &__host--container {
-    margin-top: 15px;
-    justify-content: right;
-   }
+    &__host--container {
+      margin-top: 15px;
+      justify-content: right;
+    }
 
-   &__host--name {
-    font-size: 16px;
-   }
+    &__host--name {
+      font-size: 16px;
+    }
 
-   &__section  {
-    display: block;
-  
-  }
+    &__section {
+      display: block;
+    }
 
-  &__location {
-    font-size: 18px;
-  }
-  
-  &__title--wrapper {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 0;
-    align-items: flex-start;
-  }
-  &__property--wrapper {
-   width: 90%;
-   margin: auto;
-   display: inline-flex;
-   justify-content: space-between;
-   flex-direction: row;
- 
-  }
-  &__collapse-container {
-    flex-direction: column;
-  }
-  &__ratings {
-   margin-top: 30px;
-  }
+    &__location {
+      font-size: 18px;
+    }
 
+    &__title--wrapper {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 0;
+      align-items: flex-start;
+    }
+    &__property--wrapper {
+      width: 90%;
+      margin: auto;
+      display: inline-flex;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    &__collapse-container {
+      flex-direction: column;
+    }
+    &__ratings {
+      margin-top: 30px;
+    }
   }
-  
-  
 }

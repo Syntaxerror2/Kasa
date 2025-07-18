@@ -11,12 +11,9 @@
   white-space: nowrap;
   text-align: center;
 
-
   &__section {
     width: 100%;
   }
-
-
 
   &__wrapper {
     text-align: left;
@@ -27,14 +24,12 @@
     color: white;
     margin-top: 20px;
     flex-wrap: wrap;
-    
   }
-
 }
 
 @media (max-width: 768px) {
- .tag {
-  width: unset;
-  margin-bottom: 3px;
- }
+  .tag {
+    width: unset;
+    margin-bottom: 3px;
+  }
 }

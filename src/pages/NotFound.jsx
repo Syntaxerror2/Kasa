@@ -1,5 +1,5 @@
 import messageError from "../assets/404.svg";
-import "../styles/Error.scss";
+import "../styles/Notfound.scss";
 import { Link } from "react-router-dom";
 
 export default function NotFound() {
@@ -19,4 +19,3 @@ export default function NotFound() {
     </main>
   );
 }
-

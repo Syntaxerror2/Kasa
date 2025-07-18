@@ -7,7 +7,11 @@ export default function Header() {
   return (
     <header className="header">
       <div className="header__logo">
-        <img className="header__kasa--logo" alt="logo de Kasa, site de vente immobilière" src={logo}></img>
+        <img
+          className="header__kasa--logo"
+          alt="logo de Kasa, site de vente immobilière"
+          src={logo}
+        ></img>
       </div>
       <nav className="header__nav">
         <NavLink
