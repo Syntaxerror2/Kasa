@@ -31,5 +31,9 @@
   .tag {
     width: unset;
     margin-bottom: 3px;
+     &__wrapper {
+      margin-top: 10px;
+     }
   }
+  
 }
