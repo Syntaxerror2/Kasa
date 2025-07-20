@@ -6,7 +6,9 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
 ## Installation via npm
-Faites npm install puis npm run dev dans le terminal.
+Dans le terminal :
+npm install 
+npm run dev 
 
 ## Installation font awesome kit
 npm install --save @fortawesome/fontawesome-svg-core
