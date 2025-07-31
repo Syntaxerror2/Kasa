@@ -3,7 +3,11 @@ import "../styles/Slideshow.scss";
 import VectorLeft from "../assets/Vector_left.svg";
 import VectorRight from "../assets/Vector_right.svg";
 import { useState } from "react";
-
+/**
+ * 
+ * @param {*} param0 
+ * @returns 
+ */
 export default function Slideshow({ property }) {
   const pictures = property.pictures.includes(property.cover)
     ? property.pictures
