@@ -5,6 +5,7 @@
   height: 400px;
   margin-top: 40px;
 
+
   &__cover {
     border-radius: 25px;
   }
@@ -28,11 +29,22 @@
 
   &__vector--left {
     left: 10px;
+     outline: none;
   }
 
   &__vector--right {
     right: 10px;
+     outline: none;
   }
+   &__vector--right:focus {
+    right: 10px;
+     outline: none;
+  }
+  &__vector--img {
+    margin: auto;
+  }
+
+  
 }
 
  .hidden {
@@ -58,13 +70,16 @@
     }
     &__vector--left {
       left: 10%;
+      height: 40px;
     }
 
     &__vector--right {
       right: 10%;
+      height: 40px;
     }
     &__vector--img {
-      height: 50%;
+      height: 100%;
+      padding: 0;
     }
   }
 }

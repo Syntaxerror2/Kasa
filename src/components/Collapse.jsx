@@ -12,7 +12,7 @@ export default function Collapse({ title, content }) {
       <div className="collapse__header" onClick={openAndClose}>
         <h2 className="collapse__title">{title}</h2>
         <span className="collapse__span">
-          <img src={downArrow} className={isOpen ? "rotate" : "rotate__up"} />
+          <img src={downArrow} alt="icone d'une flèche permettant de faire défiler"   className={isOpen ? "rotate" : "rotate__up"} />
         </span>
       </div>
       <div className={`collapse__container ${isOpen && "open"}`}>
