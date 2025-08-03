@@ -67,15 +67,16 @@
     }
     &__vector {
       margin-top: 0;
+      top: 50%;
     }
     &__vector--left {
-      left: 10%;
-      height: 40px;
+      left: 7%;
+      height: 30px;
     }
 
     &__vector--right {
-      right: 10%;
-      height: 40px;
+      right: 7%;
+      height: 30px;
     }
     &__vector--img {
       height: 100%;
